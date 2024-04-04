@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  message:String ="welcomegit status";
+  message:String ="welcome to kolhapur";
 }
