@@ -15,6 +15,7 @@ import { StateDistrictAssignComponent } from './state-district-assign/state-dist
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HighlightDirective } from './CustomDirectives/highlight.directive';
 import { HowerEffectDirective } from './CustomDirectives/hower-effect.directive';
+import { GitpracticeComponent } from './gitpractice/gitpractice.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { HowerEffectDirective } from './CustomDirectives/hower-effect.directive'
     CalculatorComponent,
     HighlightDirective,
     HowerEffectDirective,
+    GitpracticeComponent,
     
   ],
   imports: [
