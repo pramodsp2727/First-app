@@ -1,0 +1,13 @@
+<label for="id">Value1</label>
+<input type="text" name="num1" id="id" (change)="num1">
+<br><br>
+<label for="id1">Value2</label>
+<input type="text" name="num2" id="id1" (change)="num2">
+<br><br>
+ 
+<button type="button" (click)="Addition('Increament')">Addition</button> 
+<button type="button" (click)="Substraction('decreament')">Substract</button>
+<button type="button" (click)="Multi('multiplication')">Multiple</button>
+<button type="button" (click)="Division('division')">Divide</button>
+<br>
+<h4>Total Value : {{Totalvalue}}</h4>

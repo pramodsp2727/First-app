@@ -1,0 +1,25 @@
+<div class="show">
+    <label for="id1">Num1</label>
+<input type="number" placeholder="value 1" id="id1" (change)="num1change($event)">
+<br>
+<br>
+<label for="id2">Num2</label>
+<input type="number" placeholder="value 2" id="id2" ((change))="num2change($event)">
+<br>
+
+</div>
+<div class="btn">
+<br>
+<button type="button" (click)="Calculate('addition')">Addition</button>
+
+<button type="button" (click)="Calculate('substraction')">Substraction</button>
+
+<button type="button" (click)="Calculate('multiplication')">Multiplication</button>
+
+<button type="button" (click)="Calculate('division')">Division</button>
+</div>
+
+<h3 class="show">Result of {{type}} is :{{result}}</h3>
+
+ 
+

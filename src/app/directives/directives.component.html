@@ -1,0 +1,70 @@
+<!-- <div *ngIf="isshow"> 
+<label for="id1">First Name </label>
+ <input type="text" name="Fname" id="id1">
+</div> -->
+
+<!-- <div *ngIf="isshow;else anotherblock" > 
+  <label for="id1">First Name </label>
+   <input type="text" name="Fname" id="id1">
+  </div>
+<ng-template #anotherblock> 
+  <div> 
+    <label for="id1">Last Name </label>
+     <input type="text" name="Fname" id="id1">
+    </div>
+</ng-template>
+
+<button type="button" (click)="toggle()">toggle</button> -->
+
+<div *ngIf="isshow; then thatblock ;else anotherblock"></div>
+
+<ng-template #thatblock>
+  <div>
+    <label for="id1">First Name </label>
+    <input type="text" name="Fname" id="id1">
+  </div>
+</ng-template>
+
+<ng-template #anotherblock>
+  <div>
+    <label for="id1">Last Name </label>
+    <input type="text" name="Fname" id="id1">
+  </div>
+</ng-template>
+
+<button type="button" (click)="toggle()">toggle</button>
+
+<ol>
+  <li *ngFor="let items of courseslist">{{items}}</li>
+</ol>
+<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Employee Name</th>
+      <th scope="col">Designation</th>
+      <th scope="col">Sallary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let items of employeedetails;let i = index;let o = odd;let e = even, let f = first">
+      <tr *ngIf="items.sallary > 30000" [ngClass]="{'bg-primary':f, 'bg-secondary':e}" >
+        <th>{{i+1}}</th>
+        <td>{{items.EName}}</td>
+        <td>{{items.Designation}}</td>
+        <td>{{items.sallary}}</td> 
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+<br><br>
+
+  <div [ngSwitch]="status">
+  <div *ngSwitchCase="'Placed'">Placed: Your Order has been Placed..</div>
+  <div *ngSwitchCase="'Pending'">Pending: Your Ordeer iS Pending..</div>
+  <div *ngSwitchCase="'Delivered'"> Delivered: Your Ordered Was Delivered..</div>
+  <div *ngSwitchDefault>Unkownon Status : Plz Visit on Custmor Contact..</div>
+</div>
+
+ <h3 [appHighlight]="false">My name is Pramod Patil</h3>

@@ -1,0 +1,15 @@
+<div class="container"> 
+<div class="dropdown" >
+    <label for="id1">Select States</label>
+    <select name="selectsatets" id="id1" [(ngModel)]="selectedstate" (ngModelChange)="getdistrict()">
+        <option *ngFor="let item of statelist" [value]="item">{{item}}</option>
+    </select>
+</div>
+<br>
+<div>
+    <label for="id1"> Select District </label>
+    <select name="Districtname" id="id1">
+        <option *ngFor="let item of Districtlist" [value]="item">{{item}}</option>
+    </select>
+</div>
+</div>

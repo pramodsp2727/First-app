@@ -1,0 +1,17 @@
+ <!-- <label for="id">City</label>
+ <input type="text" name="Cityname" id="id" [value]="City" (input)="citychange($event)">
+ <h5> City Name : {{City}}</h5> -->
+
+ <label for="id1">City Name</label>
+ <input type="text" name="Cname" id="id1" [(ngModel)]="cityname">
+ <h6>city name : {{cityname}}</h6>
+ <button type="button" (click)="print()">Save</button>
+<br><br>
+
+ <label for="id2">Price</label>
+ <input type="text" name="Price" id="id2" [(ngModel)]="Price" (ngModelChange)="CalculatePrice()">
+<br><br>
+ <label for="id3">Quantity</label>
+ <input type="text" name="Price" id="id3" [(ngModel)]="Quantity" (ngModelChange)="CalculatePrice()">
+ 
+ <h5>Total price {{TotalPrice}}</h5>

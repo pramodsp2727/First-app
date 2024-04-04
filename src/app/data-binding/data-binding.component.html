@@ -1,0 +1,20 @@
+<h3>Data Binding Example</h3>
+<h4>First Name : {{FirstName}}</h4>
+<h4>Last Name : {{LastName}}</h4>
+<h5>Employee Name : {{employeeObj.EmployeeName}}</h5>
+<h5>Employee Designation : {{employeeObj.Designation}}</h5>
+<h5>Company Name : {{employeeObj.CompanyName}}</h5>
+<h4>Skills are : {{skills[0]}},{{skills[2]}},{{skills[3]}},{{skills[1]}}</h4>
+<h4>{{10+5}}</h4>
+<br>
+<br>
+<a [href]="fblink" target="_blank">Facebook</a>
+<br>
+<a href="{{Instalink}}">Instagram</a>
+<h1 [textContent]= "Message"></h1>
+
+<button class="btn" type="button" [disabled] = "isbtnDisable" >save</button>
+<br><br>
+<button class="btn" type="button" disabled = "{{isbtnDisable}}">save</button>
+>
+

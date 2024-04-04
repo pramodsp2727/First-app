@@ -1,0 +1,27 @@
+ <h3>{{message | uppercase}}</h3> 
+ <h2>{{message | lowercase}}</h2>
+ <h4> employee designation : "{{ employeeObj.Designation | uppercase}}"</h4>
+ <h3> company Name : "{{ employeeObj.CompanyName | titlecase }}"</h3>
+ <h4>currency : {{currency | currency:'INR'}}</h4> 
+ <a [href]="Instaprofile">MyInstaProfile</a>
+ <h4>Date : {{Joindate}}</h4>
+ <h4>Date : {{Joindate | date}}</h4>
+  <h4>Date : {{Joindate | date : 'shortDate' }}</h4>
+  <h4>Date : {{Joindate | date:'dd/mm/yy'}}</h4>
+  <h4>Date : {{Joindate | date:'mm/dd/yy'}}</h4>
+  <h4>Date : {{Joindate1 | date}}</h4>
+  <h4>sallary : {{employeeObj.sallary | currency:'INR'}}</h4>
+  <h3>Income : {{Income | number:'.2-2'}}</h3>
+  <button type="button" (click)="myfun()">save</button>
+  <br> 
+  <br>
+  <button type="button" (click)="Increament()">Increament</button>
+  {{counter}}
+  <button type="button" (click)="Decreament()">Decreament</button>
+  <br>
+  <br> 
+  
+
+
+  
+ 
